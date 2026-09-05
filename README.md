@@ -11,8 +11,7 @@ how much that reconstruction actually **recovers object-detector performance**
 loss) is the best model overall** — it wins on SSIM, MS-SSIM, LPIPS, and on
 post-inpainting detection recall at every high-occlusion level, across two
 detector architectures and two different dataset formats (cropped patches and
-full scenes). See [`docs/findings.md`](docs/findings.md) for the full writeup,
-including two genuine failure-case studies (a collapsed GAN and a ViT's
+full scenes).Including two genuine failure-case studies (a collapsed GAN and a ViT's
 patch-blocking artifacts).
 
 ## Project structure
