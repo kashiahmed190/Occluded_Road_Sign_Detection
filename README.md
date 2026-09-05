@@ -176,16 +176,9 @@ python evaluate_detection_fullimage.py
   but also recovers more from inpainting — inpainting matters more for
   Faster R-CNN pipelines specifically.
 
-## Notes on the two pipeline generations
+## Notes on the pipeline generations
 
-This repo contains **two generations** of the same pipeline:
 
 - **`fullimage/`** (current, correct): trained/evaluated on the 877 original
   images with real PASCAL VOC bounding boxes. Detection evaluation uses
   proper IoU-based matching (a real, if simplified, object-detection metric).
-- **`legacy_cropped/`** (superseded): an earlier iteration that used 1244
-  pre-cropped single-sign patches with *synthesized* full-frame bounding
-  boxes (since the crops had no finer box to recover) and a simplified
-  "does the right class appear anywhere in the image" detection metric.
-  Kept for reference/reproducibility of earlier results, but the
-  `fullimage/` pipeline is more rigorous and is the recommended one to use.
