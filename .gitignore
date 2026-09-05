@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Data (too large / private for git; document structure in README instead)
+d/
+occ/
+occ_masks/
+e/
+traintestsplit/
+yolo_dataset*/
+*.pth
+*.pt
+
+# Training outputs
+inpainting_model/
+model_B_mask_unet/
+model_C_roi_unet/
+enhanced_unetapril2026/
+model_E_advanced_unet/
+model_F_plain_autoencoder/
+model_G_context_encoder_gan/
+model_H_partial_conv_unet/
+model_I_vit_inpainter/
+faster_rcnn_*_detector/
+yolo_runs*/
+
+# Evaluation outputs
+out_final/
+outsept26/
+sept2026fullimage/
+detection_results*/
+inpainting_detection_results/
+diagnose_output/
+
+# Misc
+.DS_Store
+*.log

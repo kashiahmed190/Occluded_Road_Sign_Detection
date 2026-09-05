@@ -1,0 +1,11 @@
+torch>=2.0
+torchvision>=0.15
+opencv-python
+numpy
+pandas
+openpyxl
+matplotlib
+scikit-image
+pytorch-msssim
+lpips
+ultralytics
